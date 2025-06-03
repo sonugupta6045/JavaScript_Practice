@@ -1,0 +1,10 @@
+ Global exection context  ---> this
+
+ eval execation context
+
+ {} ---> memory creation phase
+   ----> execution phase
+
+   // Callstack
+   calling the function and storing into the memory and then delete it after used.
+   suppose more two function call at a time, that time LIFO this structure are follow, to pull out from that stack.
