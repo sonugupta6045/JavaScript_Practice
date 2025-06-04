@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom learing</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body  class="bg-black">
+    <div>
+        <h1 id="title" class="heading">Dom learing or practicing on the browse <span style="display: none;"> test one</span>r</h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, sunt!</p>
+
+        <ul>
+            <li class="name">1</li>
+            <li class="name">2</li>
+            <li class="name">4</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- we here learn about the qureyselector and all this properties on the web browser here 
+ 
+Query Selectors (DOM Element Selection)
+✅ Single Element Selectors
+Method	Description
+document.getElementById('id')	Selects a single element by ID
+document.querySelector('selector')	Selects the first matching element using any CSS selector
+
+✅ Multiple Element Selectors
+Method	Description
+document.getElementsByClassName('class')	Returns HTMLCollection of elements with the specified class
+document.getElementsByTagName('tag')	Returns HTMLCollection of elements with the specified tag
+document.querySelectorAll('selector')	Returns NodeList of all matching elements (can use CSS selectors)
+
+🛠️ DOM Manipulation Methods
+📌 Content Manipulation
+Method/Property	Description
+element.innerHTML	Get/set the HTML content inside an element
+element.textContent	Get/set the text content of an element
+element.innerText	Like textContent but more CSS-aware
+element.value	Get/set the value of form elements like <input> or <textarea>
+
+🎨 Style & Class Manipulation
+Method/Property	Description
+element.style.property = 'value'	Set inline styles (e.g., element.style.color = 'red')
+element.classList.add('class')	Add a class
+element.classList.remove('class')	Remove a class
+element.classList.toggle('class')	Toggle a class on/off
+element.classList.contains('class')	Check if element has a class
+
+➕ Element Creation & Insertion
+Method	Description
+document.createElement('tag')	Create a new DOM element
+parent.appendChild(child)	Append a child element
+parent.append(child1, child2, ...)	Append multiple children
+element.insertBefore(newNode, referenceNode)	Insert before a specific child
+element.insertAdjacentHTML('position', html)	Insert HTML at a specific position (beforebegin, afterbegin, beforeend, afterend)
+
+❌ Element Removal
+Method	Description
+element.remove()	Remove the element itself
+parent.removeChild(child)	Remove a specific child node
+
+🧬 Event Handling
+Method	Description
+element.addEventListener('event', callback)	Attach an event listener
+element.removeEventListener('event', callback)	Remove an event listener
+
+📎 Attribute Manipulation
+Method	Description
+element.setAttribute('attr', 'value')	Set an attribute
+element.getAttribute('attr')	Get the value of an attribute
+element.removeAttribute('attr')	Remove an attribute
+element.hasAttribute('attr')	Check if element has an attribute
+-->
