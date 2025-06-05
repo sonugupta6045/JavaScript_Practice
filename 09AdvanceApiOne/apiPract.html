@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        loding......
+    </div>
+</body>
+<script>
+    const requestURLs = 'https://randomuser.me/api/'
+    const api = new XMLHttpRequest();
+    api.open('GET',requestURLs);
+    api.onreadystatechange = function(){
+        if(api.readyState === 4){
+            const data = JSON.parse(this.responseText);
+
+            const card = document.querySelector('.card');
+            card.innerHTML = `
+                <h2>${data.results[0].email}</h2>
+                
+                <h2>${data.results[0].login.username}</h2>
+            `
+        }
+    }
+    api.send();
+</script>
+</html>
