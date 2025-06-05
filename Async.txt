@@ -1,0 +1,21 @@
+ function fetchData() {
+    // async function
+}
+
+synchronous and single threaded function are by default blocking
+
+execution context is the environment in which the code is executed
+
+execcute one line of code at a time
+
+blocking code is code that prevents the execution of other code until it is finished
+non blocking code is code that allows other code to run while it is executing
+function fetchData() {
+    // Simulating a blocking operation
+    console.log("Fetching data...");
+    for (let i = 0; i < 1e9; i++) {} // Simulate a delay
+    console.log("Data fetched.");
+}
+
+used of the blocking and non blocking code are depend on the use case
+// blocking code are those code when first completed thier task then goes for another one.
